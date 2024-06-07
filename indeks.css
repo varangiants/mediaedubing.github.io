@@ -1,0 +1,241 @@
+:root {
+  --primary: #1676d7;
+  --bg: #363434;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--bg);
+  color: #fff;
+  /* min-height: 10000px; */
+}
+
+/* navbar start */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25.4px 4%;
+  background-color: rgba(48, 50, 50, 0.8);
+  border-bottom: 2px solid;
+  color: var(--primary);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99999;
+  animation: animationNavbar 0.7s;
+}
+
+.navbar .navbar-logo {
+  font-size: 32px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.navbar .navbar-logo span {
+  color: var(--primary);
+}
+
+.navbar .navbar-nav a {
+  color: #fff;
+  display: inline-block;
+  font-size: 19.2px;
+  margin: 0 16px;
+}
+
+.navbar .navbar-nav a:hover {
+  color: var(--primary);
+}
+
+.navbar .navbar-nav a::after {
+  content: "";
+  display: block;
+  padding-bottom: 4.8px;
+  border-bottom: 1.6px solid var(--primary);
+  transform: scaleX(0);
+  transition: 0.2s;
+}
+
+.navbar .navbar-nav a:hover::after {
+  transform: scaleX(0.5);
+}
+
+.navbar .navbar-extra a {
+  color: #fff;
+  margin: 0 8px;
+}
+
+.navbar .navbar-extra a:hover {
+  color: var(--primary);
+}
+
+#menu {
+  display: none;
+}
+/* hero start */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-image: url(img/anak2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.hero::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    0deg,
+    rgba(54, 52, 52, 1) 1%,
+    rgba(255, 255, 255, 0) 18%
+  );
+}
+
+.hero .content {
+  padding: 25.4px 7%;
+  max-width: 960px;
+}
+
+.hero .content h1 {
+  color: #fff;
+  font-size: 50px;
+  line-height: 1;
+}
+
+.hero .content p {
+  color: #fff;
+  font-size: 15.2px;
+  margin-top: 16px;
+  line-height: 1.2;
+  font-weight: 500;
+}
+
+/* hero end */
+
+/* About start */
+.about {
+  padding: 110px 7% 25.4px;
+}
+
+.about h2 {
+  text-align: center;
+  font-size: 35px;
+}
+
+.about .row {
+  display: flex;
+  margin-top: 35px;
+}
+
+.about .row .about-img {
+  flex: 1 1 720px;
+}
+
+.about .row .about-img img {
+  width: 100%;
+}
+
+.about .row .content {
+  flex: 1 1 660px;
+  padding: 0 16px;
+}
+
+.about .row .content h3 {
+  font-size: 26.5px;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.about .row .content p {
+  margin-bottom: 14px;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.5;
+}
+/* About end */
+
+/* Kontak start */
+.kontak {
+  padding: 110px 7% 25.4px;
+}
+
+.kontak h3 {
+  text-align: center;
+  font-size: 35px;
+  margin-bottom: 15px;
+}
+
+.kontak p {
+  margin-bottom: 14px;
+  max-width: 900px;
+  margin: auto;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+.kontak .row {
+  display: flex;
+  margin-top: 70px;
+  background-color: #332f2e;
+}
+
+.kontak .row .maps {
+  flex: 1 1 720px;
+}
+
+.kontak .row form {
+  flex: 1 1 720px;
+  padding: 65px 32px;
+  text-align: center;
+}
+
+.kontak .row form .input-grup {
+  display: flex;
+  align-items: center;
+  background-color: var(--bg);
+  padding-left: 32px;
+  margin-top: 32px;
+  border: 1px solid;
+}
+
+.kontak .row form .input-grup input {
+  width: 100%;
+  padding: 32px;
+  background: none;
+  font-size: 20px;
+  font-weight: 300;
+  color: #ffff;
+}
+
+.kontak .row form .btn {
+  display: inline-block;
+  margin-top: 52px;
+  padding: 16px 52px;
+  color: #fff;
+  background-color: var(--primary);
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+}
+/* Kontak end */
